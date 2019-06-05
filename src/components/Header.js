@@ -29,7 +29,7 @@ class Header extends Component {
             </Link>
             )}
             <div className="ml1 no-underline black">|</div>
-            <a href="https://www.anyanggewu.com/" className="ml1 no-underline black">返回主页</a>
+            <div><a href="https://www.anyanggewu.com/" className="ml1 no-underline black">返回主页</a></div>
         </div>
       </div>
     )
