@@ -99,9 +99,9 @@ class NormalLoginForm extends React.Component {
                                     valuePropName: 'checked',
                                     initialValue: true,
                                 })(<Checkbox>记住我</Checkbox>)}
-                                <a className="login-form-forgot" href="#" onClick={info}>
+                                <Link className="login-form-forgot"  onClick={info}>
                                     忘记密码
-                                </a>
+                                </Link>
                                 <Button type="primary" htmlType="submit" className="login-form-button">
                                     登陆
                                     {loading && <Spin />}
