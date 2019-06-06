@@ -16,7 +16,7 @@ import * as serviceWorker from './serviceWorker';
 
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:4000',
+  uri: 'http://118.31.21.228:4000/',
 });
 
 const errorLink = onError(({ graphQLErrors }) => {

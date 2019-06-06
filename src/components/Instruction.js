@@ -28,6 +28,9 @@ class Instruction extends React.Component{
                  <Button 
                  onClick={()=>this.props.history.push('/promote/login')} 
                  type="primary" style={{marginLeft:10,marginBottom:10}}>登陆推广账号</Button>
+                <span style={{float:"right",marginRight:100,marginBottom:10}}>百度搜索<span style={{fontWeight:"bold"}}>“格物水滴”</span>找到我们</span>
+
+
                 </div>
                 
             <Collapse accordion>
@@ -99,9 +102,17 @@ class Instruction extends React.Component{
                 <Card
                     hoverable
                     style={{ width: 400,}}
+                    cover={<img alt="example" src={require('../../src/assets/2-1.PNG')} />}
+                >
+                    <Meta title="1.百度搜索'格物水滴'官网下载" description="通过百度搜索“格物水滴”找到公司网站进行下载" />
+                </Card>
+                <Divider />
+                <Card
+                    hoverable
+                    style={{ width: 400,}}
                     cover={<img alt="example" src={require('../../src/assets/2-1.jpg')} />}
                 >
-                    <Meta title="1.应用商店搜索'格物水滴'下载安装" description="目前app可以在百度、360、91助手、华为、vivo、oppo等应用商店下载" />
+                    <Meta title="2.应用商店搜索'格物水滴'下载安装" description="目前app可以在百度、360、91助手、华为、vivo、oppo等应用商店下载" />
                 </Card>
                 <Divider />
                 <Card
@@ -109,7 +120,7 @@ class Instruction extends React.Component{
                     style={{ width: 400}}
                     cover={<img alt="example" src={require('../../src/assets/2-2.png')} />}
                 >
-                    <Meta title="2.扫码下载" description="" />
+                    <Meta title="3.扫码下载" description="" />
                 </Card>
                 <Divider />
                 <Card
@@ -117,7 +128,7 @@ class Instruction extends React.Component{
                     style={{ width: 400}}
                     cover={<img alt="example" src={require('../../src/assets/2-3.jpg')} />}
                 >
-                    <Meta title="3.通过app内的分享链接下载" description="通过点击app内的“分享水滴”复制下载链接，并发送给下载用户" />
+                    <Meta title="4.通过app内的分享链接下载" description="通过点击app内的“分享水滴”复制下载链接，并发送给下载用户" />
                 </Card>
                 </Panel>
                 <Panel header="推广用户注册,并填写学习经历" key="5">
