@@ -7,7 +7,7 @@ cd agent_client
 yarn
 npm run build
 cd /home/node_server
-cd rm -rf build
+rm -rf build
 cp -r /home/agent_client/build/ /home/node_server/build/
 pm2 stop app
 pm2 delete app

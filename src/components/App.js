@@ -5,7 +5,9 @@ import Login from './Login'
 import Entry from './Entry'
 import Statistic from './Statistic'
 import Instruction from './Instruction'
+import { Layout,Button } from 'antd';
 
+const { Footer } = Layout;
 
 class App extends Component {
 
@@ -22,8 +24,10 @@ class App extends Component {
             <Route exact path="/promote/statistic" component={Statistic} />
           </Switch>
         </div>
-  
-  
+        <Footer>
+          <span>安卓版本：</span>
+          <a  style={{fontWeight:"bold"}}  href="https://gewushuidi.oss-cn-hangzhou.aliyuncs.com/sdapp.apk">点击下载</a>
+          </Footer>
       </div>
     )
   }

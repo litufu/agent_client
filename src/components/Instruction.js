@@ -30,7 +30,7 @@ class Instruction extends React.Component{
                  <Button 
                  onClick={()=>this.props.history.push('/promote/login')} 
                  type="primary" style={{marginLeft:10,marginBottom:10}}>登陆推广账号</Button>
-                {/* <span style={{float:"right",marginRight:100,marginBottom:10}}>百度搜索<span style={{fontWeight:"bold"}}>“格物水滴”</span>找到我们</span> */}
+                {/* <span style={{float:"right",marginRight:100,marginBottom:10}}>安卓版本：<a style={{fontWeight:"bold"}} href="https://gewushuidi.oss-cn-hangzhou.aliyuncs.com/sdapp.apk">点击下载</a></span> */}
                 </div>
                 
             <Collapse accordion>
