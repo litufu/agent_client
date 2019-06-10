@@ -2,7 +2,21 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router'
 import { AUTH_TOKEN } from '../constants'
+import { Modal, Button } from 'antd';
 
+
+function info() {
+  Modal.info({
+    title: '联系我们',
+    content: (
+      <div>
+        <p>联系地址：河南省安阳市殷都区华祥路与安钢大道交叉口北祥瑞商务大厦招商楼3711</p>
+        <p>联系电话：13460825410</p>
+      </div>
+    ),
+    onOk() {},
+  });
+}
 
 class Header extends Component {
   render() {
@@ -30,6 +44,9 @@ class Header extends Component {
             )}
             <div className="ml1 no-underline black">|</div>
             <div><a href="https://www.anyanggewu.com/" className="ml1 no-underline black">返回主页</a></div>
+            <div className="ml1 no-underline black">|</div>
+            {/* <Button type="link" onClick={info} className="ml1 no-underline black">联系我们</Button> */}
+            <div><a  href="#"  className="ml1 no-underline black" onClick={info}>联系我们</a></div>
         </div>
       </div>
     )

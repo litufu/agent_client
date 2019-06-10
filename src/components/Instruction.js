@@ -6,7 +6,7 @@ const { Meta } = Card;
 
 const job = [
     '1、工作岗位：格物水滴APP业务推广员。',
-    '2、工作内容：推广格物水滴APP，让参加高考的同学下载并使用APP。',
+    '2、工作内容：推广格物水滴APP，让参加高考的同学下载并使用APP进行高考志愿模拟填报。',
     '3、工作时间和地点：自由',
     '4、岗位要求：高三学生(推广者最好为高三学生,可以直接在同学群、朋友圈或贴吧进行推广)。不是高三学生者,身边有高三同学资源者亦可。',
     '5、工作报酬：按照每有效用户10元人民币计算推广提成。',
@@ -22,16 +22,15 @@ class Instruction extends React.Component{
     render(){
         return(
             <div>
-                <div>
+                <img alt="haibao" src={require('../../src/assets/haibao.png')} />
+                <div style={{marginTop:15}}>
                 <Button
                 onClick={()=>this.props.history.push('/promote/register')} 
                 type="primary" style={{marginRight:10,marginBottom:10}}>注册推广账号</Button>
                  <Button 
                  onClick={()=>this.props.history.push('/promote/login')} 
                  type="primary" style={{marginLeft:10,marginBottom:10}}>登陆推广账号</Button>
-                <span style={{float:"right",marginRight:100,marginBottom:10}}>百度搜索<span style={{fontWeight:"bold"}}>“格物水滴”</span>找到我们</span>
-
-
+                {/* <span style={{float:"right",marginRight:100,marginBottom:10}}>百度搜索<span style={{fontWeight:"bold"}}>“格物水滴”</span>找到我们</span> */}
                 </div>
                 
             <Collapse accordion>
