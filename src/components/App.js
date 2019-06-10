@@ -5,9 +5,22 @@ import Login from './Login'
 import Entry from './Entry'
 import Statistic from './Statistic'
 import Instruction from './Instruction'
-import { Layout,Button } from 'antd';
-
+import { Layout,Button,Modal } from 'antd';
 const { Footer } = Layout;
+
+function info() {
+  Modal.info({
+    title: '联系我们',
+    content: (
+      <div>
+        <p>联系地址：河南省安阳市殷都区华祥路与安钢大道交叉口北祥瑞商务大厦招商楼3711</p>
+        <p>联系电话：13460825410</p>
+      </div>
+    ),
+    onOk() {},
+  });
+}
+
 
 class App extends Component {
 
@@ -27,6 +40,7 @@ class App extends Component {
         <Footer>
           <span>安卓版本：</span>
           <a  style={{fontWeight:"bold"}}  href="https://gewushuidi.oss-cn-hangzhou.aliyuncs.com/sdapp.apk">点击下载</a>
+          <Button type="link" onClick={info} style={{marginLeft:50}}>联系我们</Button>
           </Footer>
       </div>
     )
