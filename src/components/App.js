@@ -5,9 +5,8 @@ import Login from './Login'
 import Entry from './Entry'
 import Statistic from './Statistic'
 import Instruction from './Instruction'
-import { Layout } from 'antd';
 
-// const { Footer } = Layout;
+
 class App extends Component {
 
   render() {
@@ -23,11 +22,8 @@ class App extends Component {
             <Route exact path="/promote/statistic" component={Statistic} />
           </Switch>
         </div>
-        
-        {/* <Footer>
-          <div>联系地址：河南省安阳市殷都区华祥路与安钢大道交叉口北祥瑞商务大厦招商楼3711</div>
-          <div>联系电话：13460825410</div>
-          </Footer> */}
+  
+  
       </div>
     )
   }
