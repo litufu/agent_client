@@ -44,9 +44,9 @@ class Header extends Component {
             )}
             <div className="ml1 no-underline black">|</div>
             <div><a href="https://www.anyanggewu.com/" className="ml1 no-underline black">返回主页</a></div>
-            <div className="ml1 no-underline black">|</div>
+            {/* <div className="ml1 no-underline black">|</div> */}
             {/* <Button type="link" onClick={info} className="ml1 no-underline black">联系我们</Button> */}
-            <div><a  href="#"  className="ml1 no-underline black" onClick={info}>联系我们</a></div>
+            {/* <div><a  href="#"  className="ml1 no-underline black" onClick={info}>联系我们</a></div> */}
         </div>
       </div>
     )

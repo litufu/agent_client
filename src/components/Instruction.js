@@ -30,6 +30,10 @@ class Instruction extends React.Component{
                  <Button 
                  onClick={()=>this.props.history.push('/promote/login')} 
                  type="primary" style={{marginLeft:10,marginBottom:10}}>登陆推广账号</Button>
+                 <Button style={{marginLeft:50,marginBottom:10,backgroundColor:"black"}} >
+                 <a  style={{fontWeight:"bold",color:"white"}}  href="https://gewushuidi.oss-cn-hangzhou.aliyuncs.com/sdapp.apk" >安卓版本下载</a>
+                 </Button>
+                
                 {/* <span style={{float:"right",marginRight:100,marginBottom:10}}>安卓版本：<a style={{fontWeight:"bold"}} href="https://gewushuidi.oss-cn-hangzhou.aliyuncs.com/sdapp.apk">点击下载</a></span> */}
                 </div>
                 
