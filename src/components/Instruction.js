@@ -118,7 +118,7 @@ class Instruction extends React.Component{
                 <Card
                     hoverable
                     style={{ width: 400}}
-                    cover={<img alt="example" src={require('../../src/assets/2-2.png')} />}
+                    cover={<img alt="example" src={require('../../src/assets/sdapp.png')} />}
                 >
                     <Meta title="3.扫码下载" description="" />
                 </Card>
