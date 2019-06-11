@@ -10,10 +10,10 @@ const job = [
     '3、工作时间和地点：自由',
     '4、岗位要求：高三学生(推广者最好为高三学生,可以直接在同学群、朋友圈或贴吧进行推广)。不是高三学生者,身边有高三同学资源者亦可。',
     '5、工作报酬：按照每有效用户10元人民币计算推广提成。',
-    '6、有效用户确认规则：首先你应注册推广账号，选择自己负责推广的学校；所有在app内注册并填写高中学历为你负责推广学校的，均为你的推广用户；你的推广用户在指定验收时间内登陆APP并使用高考报名进行模拟报考的，便为你的有效用户。',
-    '7、工作流程：业务推广者注册推广账号->推广下载格物水滴APP->向高考学生推广注册->向高考学生推广高考报名功能。各流程详情见各部分描述。',
+    '6、有效用户确认规则：首先你应注册推广账号，选择自己负责推广的学校；所有在app内注册并填写高中学历为你负责推广学校的，均为你的推广用户；你的推广用户在指定验收时间内登陆APP并使用高考模拟报名进行模拟报考的，便为你的有效用户。',
+    '7、工作流程：业务推广者注册推广账号->推广下载格物水滴APP->向高考学生推广注册->向高考学生推广高考模拟报名功能。各流程详情见各部分描述。',
     '8、推广建议：建议联合不同班级的同学共同推广，做大蛋糕，共同分配奖金。',
-    '9、格物水滴APP简介：格物水滴app有高考报名、同城交友等多种功能。其中高考报名功能主要为：使用APP进行高考志愿模拟填报的同学，可以看到自己在报考学校和专业的成绩排名，并可以与其他报考者沟通交流。',
+    '9、格物水滴APP简介：格物水滴app有高考模拟报名、同城交友等多种功能。其中高考模拟报名功能主要为：使用APP进行高考志愿模拟填报的同学，可以看到自己在平台上所有报考相同学校和专业学生中的成绩排名，并可以与其他报考者沟通交流。',
 ];
 
 
@@ -141,7 +141,7 @@ class Instruction extends React.Component{
                     style={{ width: 400,}}
                     cover={<img alt="example" src={require('../../src/assets/3-1.jpg')} />}
                 >
-                    <Meta title="1.用户注册" description="" />
+                    <Meta title="1.用户注册" description="用户填写用户名、密码进行注册" />
                 </Card>
                 <Divider />
                 <Card
@@ -160,21 +160,21 @@ class Instruction extends React.Component{
                     <Meta title="3.在学习经历中填写地点和选择学校名称" description="凡是学习经历中高中学校名称填写为你所推广学校的，便归为你的推广用户。" />
                 </Card>
                 </Panel>
-                <Panel header="推广高考报名功能" key="6">
+                <Panel header="推广高考模拟报名功能" key="6">
                 <Card
                     hoverable
                     style={{ width: 400,}}
-                    cover={<img alt="example" src={require('../../src/assets/4-1.jpg')} />}
+                    // cover={<img alt="example" src={require('../../src/assets/4-1.jpg')} />}
                 >
-                    <Meta title="1.高考报名功能" description="你推广的用户在规定的验收时间内使用高考报名功能进行模拟报名，便认定为有效用户，据以计算推广业绩。" />
+                    <Meta title="1.高考模拟报名功能" description="你推广的用户在规定的验收时间内使用高考模拟报名功能进行模拟报名，便认定为有效用户，据以计算推广业绩。" />
                 </Card>
                 <Divider />
                 <Card
                     hoverable
                     style={{ width: 400}}
-                    cover={<img alt="example" src={require('../../src/assets/4-2.jpg')} />}
+                    // cover={<img alt="example" src={require('../../src/assets/4-2.jpg')} />}
                 >
-                    <Meta title="2.模拟高考志愿填报" description="填写高考基本信息、选择学校和专业进行高考模拟报名" />
+                    <Meta title="2.模拟高考志愿填报" description="高考用户填写高考基本信息、选择学校和专业便可进行高考模拟报名" />
                 </Card>
                 <Divider />
        

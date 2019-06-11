@@ -2,21 +2,6 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router'
 import { AUTH_TOKEN } from '../constants'
-import { Modal, Button } from 'antd';
-
-
-function info() {
-  Modal.info({
-    title: '联系我们',
-    content: (
-      <div>
-        <p>联系地址：河南省安阳市殷都区华祥路与安钢大道交叉口北祥瑞商务大厦招商楼3711</p>
-        <p>联系电话：13460825410</p>
-      </div>
-    ),
-    onOk() {},
-  });
-}
 
 class Header extends Component {
   render() {
