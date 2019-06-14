@@ -1,8 +1,10 @@
 import React from 'react'
 import { Collapse,Card ,List,Divider,Button } from 'antd';
-
+import Product from './Product'
 const Panel = Collapse.Panel;
 const { Meta } = Card;
+
+
 
 const job = [
     '1、推广奖励：按照每有效用户10元人民币计算推广提成。。',
@@ -22,6 +24,7 @@ class Instruction extends React.Component{
         return(
             <div>
                 <img alt="haibao" src={require('../../src/assets/haibao.png')} />
+                
                 <div style={{marginTop:15}}>
                 <Button
                 onClick={()=>this.props.history.push('/promote/register')} 
@@ -35,7 +38,7 @@ class Instruction extends React.Component{
                 
                 {/* <span style={{float:"right",marginRight:100,marginBottom:10}}>安卓版本：<a style={{fontWeight:"bold"}} href="https://gewushuidi.oss-cn-hangzhou.aliyuncs.com/sdapp.apk">点击下载</a></span> */}
                 </div>
-                
+                <Product />
             <Collapse accordion>
                  <Panel header="推广有礼" key="1">
                     <List
