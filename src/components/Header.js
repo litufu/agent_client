@@ -9,7 +9,7 @@ class Header extends Component {
     return (
       <div className="flex pa1 justify-between nowrap orange">
         <div className="flex flex-fixed black">
-          <div className="fw7 mr1">格物水滴业务推广管理系统</div>
+          <div className="fw7 mr1">格物水滴APP</div>
         </div>
         <div className="flex flex-fixed">
           {authToken ? (
@@ -20,11 +20,11 @@ class Header extends Component {
                 this.props.history.push(`/promote`)
               }}
             >
-              退出
+              退出推广账户
             </div>
           ) : (
               <Link to="/promote/login" className="ml1 no-underline black">
-                登陆
+                登陆推广账户
             </Link>
             )}
             <div className="ml1 no-underline black">|</div>

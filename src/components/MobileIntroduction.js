@@ -28,19 +28,17 @@ class Instruction extends React.Component{
                 <div style={{marginTop:15}}>
                 <Button
                 onClick={()=>this.props.history.push('/promote/register')} 
-                type="primary" style={{marginRight:1,marginBottom:1}}>注册推广账号</Button>
-                 <Button 
-                 onClick={()=>this.props.history.push('/promote/login')} 
-                 type="primary" style={{marginLeft:1,marginBottom:1}}>登陆推广账号</Button>
-                 <Button style={{marginLeft:5,marginBottom:1,backgroundColor:"black"}} >
-                 <a  style={{fontWeight:"bold",color:"white"}}  href="https://gewushuidi.oss-cn-hangzhou.aliyuncs.com/sdapp.apk" >安卓版本下载</a>
+                type="primary" style={{margin:5}}>注册推广账号</Button>
+                 <Button style={{margin:5,backgroundColor:"black"}} >
+                 <a  style={{fontWeight:"bold",color:"white"}}  href="https://gewushuidi.oss-cn-hangzhou.aliyuncs.com/sdapp.apk" >APP下载(安卓)</a>
                  </Button>
-                
-                {/* <span style={{float:"right",marginRight:100,marginBottom:10}}>安卓版本：<a style={{fontWeight:"bold"}} href="https://gewushuidi.oss-cn-hangzhou.aliyuncs.com/sdapp.apk">点击下载</a></span> */}
                 </div>
-                <MobileProduct />
+                
             <Collapse accordion>
-                 <Panel header="推广有礼" key="1">
+                <Panel header="高考报名功能示意图" key="1">
+                    <MobileProduct />
+                </Panel>
+                 <Panel header="推广有礼" key="2">
                     <List
                     bordered
                     dataSource={job}

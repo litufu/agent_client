@@ -31,7 +31,7 @@ class App extends Component {
         <MediaQuery query='(max-device-width:1224px)'>
         <div className="center w85">
           <Header />
-          <div className="ph3 pv3 background-gray">
+          <div className="background-gray">
             <Switch>
               <Route exact path="/" render={()=><Redirect to="promote"/>}  />  
               <Route exact path="/promote" component={MobileIntroduction}  />
