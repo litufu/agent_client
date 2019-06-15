@@ -35,7 +35,7 @@ class Instruction extends React.Component{
                 </div>
                 
             <Collapse accordion>
-                <Panel header="高考报名功能示意图" key="1">
+                <Panel header="模拟高考报名功能示意图" key="1">
                     <MobileProduct />
                 </Panel>
                  <Panel header="推广有礼" key="2">
