@@ -11,7 +11,7 @@ export default class Product extends React.Component {
                     <Col span={24}>
                         <Card
                             hoverable
-                            title="1、进入高考报名页面"
+                            title="1、进入模拟高考报名页面"
                             cover={<img alt="选择高考报名" src={require('../../src/assets/5-1.jpg')} />}
                         >
                             <Meta description="注册账号进入app，填写个人基本信息和高中学习经历后，便可以选择进入高考报名功能" />

@@ -8,13 +8,13 @@ export default class Product extends React.Component {
     render() {
         return (
             <div style={{ background: '#ECECEC', padding: '30px' }}>
-                <Title style={{textAlign:'center'}}>高考报名功能示意图</Title>
+                <Title style={{textAlign:'center'}}>模拟高考报名功能示意图</Title>
                 <Divider />
                 <Row gutter={16}>
                     <Col span={8}>
                         <Card
                             hoverable
-                            title="1、进入高考报名页面"
+                            title="1、进入模拟高考报名页面"
                             style={{ width: 240 }}
                             cover={<img alt="选择高考报名" src={require('../../src/assets/5-1.jpg')} />}
                         >
